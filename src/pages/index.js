@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import MainPageButton from "../components/main-page-button";
+import Caution from "../components/warnings/caution";
 
 import stylingGlobals from "../styles/styling-globals";
 
@@ -97,7 +98,7 @@ export default function Home() {
             <h1>Velocity</h1>
             <p>The modern, next-generation Minecraft server proxy.</p>
             <ButtonSection>
-              <MainPageButton icon={<FiDownload size={"32px"}/>} title={"Download Now"} link={"/downloads"} />
+              <MainPageButton icon={<FiDownload size={"32px"}/>} title={"Download Now"} link={"https://papermc.io/downloads#Velocity"} />
               <MainPageButton icon={<FiBook size={"32px"}/>} title={"Learn More"} link={"/wiki"} />
             </ButtonSection>
           </div>
@@ -106,6 +107,10 @@ export default function Home() {
       <Explainer>
         <ExplainerSection>
           <ExplainerTidbit>
+            <Caution>
+              Velocity is now part of the <a href="https://papermc.io">PaperMC Organisation</a>
+              <br>Downloads for the latest releases can now be found on <a href="https://papermc.io/downloads#Velocity">papermc.io/downloads</a>.
+            </Caution>
             <h2>Meet Velocity.</h2>
             <p>
               Velocity is a next-generation Minecraft proxy focused on scalability and flexibility. It allows server owners to link together multiple Minecraft servers so they may appear as one.
